@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <Chai/>
-      <h1>Chai aur React</h1>
+      <h1>Chai aur React | MJ</h1>
       <p>test</p>
     </>
   )
