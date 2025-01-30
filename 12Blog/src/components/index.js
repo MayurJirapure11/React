@@ -6,6 +6,9 @@ import LogoutBtn from "./Header/LogoutBtn";
 import Button from './Button'
 import Input from './Input'
 import Select from "./Select";
+import Signup from "./Signup";
+import PostCard from './PostCard' ;
+import AuthLayout from './AuthLayout';
 
 export {
     Header ,
@@ -15,5 +18,8 @@ export {
     LogoutBtn,
     Button,
     Input, 
-    Select
+    Select,
+    Signup,
+    PostCard,
+    AuthLayout
 }
