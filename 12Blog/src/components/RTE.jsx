@@ -2,6 +2,8 @@ import React from 'react';
 import { Editor } from '@tinymce/tinymce-react';
 import { Controller } from 'react-hook-form';
 
+const apiKey = import.meta.env.VITE_TINYMCE_API_KEY; 
+
 export default function RTE({ name, control, label, defaultValue = "" }) {
   return (
     <div className='w-full'> 
@@ -13,7 +15,7 @@ export default function RTE({ name, control, label, defaultValue = "" }) {
         defaultValue={defaultValue}
         render={({ field: { onChange, value } }) => (
           <Editor
-            apiKey="un3retsoi17k0sifcdz7ebnu9eizt0bhkkm4k5vb1jmfp0d5"  // 🔹 Replace with your real TinyMCE API key
+            apiKey={apiKey}
             value={value}  // Ensures controlled input
             initialValue={defaultValue}
             init={{
